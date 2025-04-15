@@ -118,7 +118,7 @@ class yts_mx(object):
                         continue
                     formatTorrent = {
                         'link': torrent['url'],
-                        'name': f'{movie["title_long"]} [{torrent["language"]}] [{torrent["quality"]}] [{torrent["video_codec"]}] [{torrent["type"]}] [{torrent["audio_channels"]}] [YTS.MX]',
+                        'name': f'{movie["title_long"]} {movie["language"]} [{torrent["quality"]}] [{torrent["video_codec"]}] [{torrent["type"]}] [{torrent["audio_channels"]}] [YTS.MX]',
                         'size': torrent['size'],
                         'seeds': str(torrent['seeds']),
                         'leech': str(torrent['peers']),
